@@ -30,16 +30,6 @@ LinkedList<T>::LinkedList(){
 	tail=NULL;
 }
 template <class T>
-int LinkedList<T>::get_count(){
-	Node<T>* p=head;
-	int count=0;
-	while(p!=NULL){
-		count++;
-		p=p->get_nlink();
-	}
-	return count;
-}
-template <class T>
 void LinkedList<T>::insert_at_beginning(T key){
 	Node<T>* node=new Node<T> (key);
 	if (head==NULL){

@@ -5,6 +5,6 @@ int main(){
 	string in;
 	cin>>in;
 	cout<<"Postfix Expression:"<<c.infix_to_postfix(in)<<endl;
-	cout<<"Infix Expression:"<<c.infix_to_prefix(in)<<endl;
+	cout<<"Prefix Expression:"<<c.infix_to_prefix(in)<<endl;
 	
 }

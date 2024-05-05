@@ -44,7 +44,7 @@ int main() {
                     myStack.pop();
                     cout<<endl;
                 } 
-                if(op==4) {
+                if(op==3) {
                     cout<<"Displaying the stack"<<endl;
                     myStack.display();
                     cout<<endl;

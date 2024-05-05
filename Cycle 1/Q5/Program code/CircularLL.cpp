@@ -110,26 +110,19 @@ void LinkedList<T>::delete_from_pos(int pos){
 	if (head==NULL){
 		cout<<"List Empty"<<endl;
 	}
-/*	if (pos==1){
-		delete_from_front();
-	}*/
-//	else{
-		int count=1;
-		Node<T>* p=head;
-		Node<T>*q=p->get_link();
-		while(q->get_link()!=head and count<pos-1){
-			p=q;
-			q=q->get_link();
-			count++;
-		}
-	/*	if (p->get_link()==head){
-			delete_from_end();
-		}*/
-	//	else{
-		p->set_link(q->get_link());
-		delete(q);
-	//	}	
-	//}//
+
+	int count=1;
+	Node<T>* p=head;
+	Node<T>*q=p->get_link();
+	while(q->get_link()!=head and count<pos-1){
+		p=q;
+		q=q->get_link();
+		count++;
+	}
+
+	p->set_link(q->get_link());
+	delete(q);
+
 }
 template <class T>
 void LinkedList<T>::display(){
